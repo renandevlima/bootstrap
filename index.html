@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <link rel="stylesheet" href="style/css/style.css">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 
     <title>Curso de bootstrap 4</title>
   </head>
@@ -110,12 +112,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center my-5">
-                <h1 class="display-3">Phasellus diam nibh</h1>
+                <h1 class="display-3"><i class="fa fa-cogs text-primary"></i> Phasellus diam nibh</h1>
                 <p> Nulla facilisi. Morbi tristique varius tempus. Maecenas mattis massa a elit interdum dictum. </p>
             </div>
         </div>
         <div class="row mb-5">
-            <div class="col-3">
+            <div class="col-md-4 col-sm-6 mb-3">
                 <nav id="navbarVertical" class="navbar navbar-light bg-light">
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link" href="#item1">Curabitur lobortis</a>
@@ -132,7 +134,7 @@
                     </nav>
                 </nav>
             </div>
-            <div class="col-9">
+            <div class="col-md-8 col-sm-6">
                 <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
                     <h4 id="item1">Lorem ipsum dolor sit amet</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis porta blandit. Vestibulum ullamcorper ex et lectus placerat, ut porttitor quam rutrum. Suspendisse gravida, nisl sed facilisis interdum, massa nisi luctus neque, eget commodo quam justo vitae eros. Donec eget sapien sagittis, suscipit dui id, dignissim neque. Morbi rutrum aliquet imperdiet. Sed cursus lorem et eros pellentesque, ac mollis urna vulputate. Cras gravida efficitur orci et laoreet.</p>
@@ -158,9 +160,9 @@
             </div>
         </div>
         <!-- criação de cards-->
-        <div class="row mb-5">
-            <div class="col-sm-4">
-                <div class="card">
+        <div class="row justify-content-sm-center">
+            <div class="col-sm-6 col-md-4">
+                <div class="card mb-5">
                     <img class="card-img-top" src="img/c1.png">
                     <div class="card-body">
                         <h4 class="card-title ">Pellentesque porta ex</h4>
@@ -189,8 +191,8 @@
                     </div>                     
                 </div>                
             </div>
-            <div class="col-sm-4">
-                <div class="card">
+            <div class="col-sm-6 col-md-4">
+                <div class="card mb-5">
                     <img class="card-img-top" src="img/c2.png">
                     <div class="card-body">
                         <h4 class="card-title ">Integer quis gravida metus.</h4>
@@ -217,8 +219,8 @@
                     </div>                    
                 </div>                
             </div>
-            <div class="col-sm-4">
-                <div class="card">
+            <div class="col-sm-6 col-md-4">
+                <div class="card mb-5">
                     <img class="card-img-top" src="img/c3.png">
                     <div class="card-body">
                         <h4 class="card-title ">Duis vitae magna</h4>
@@ -248,6 +250,189 @@
                 </div>                
             </div>            
         </div>
+    </div>
+
+    <!-- Criação de painel personalizado -->
+    <div class="jumbotron jumbotron-fluid">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4"><i class="fa fa-video-camera text-primary"></i> Nunc quis nunc</h1>
+                    <p class="lead">Nam semper dictum facilisis. Maecenas metus leo, ullamcorper ut sagittis vitae, iaculis et diam. </p>
+                    <hr>                    
+                </div>                
+            </div>
+            <!-- Menu de navegação pills -->
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+                        <li class="nav-item">
+                            <a href="#nav-item-01" class="nav-link active" id="nav-pills-01" data-toggle="pill">Suspendisse libero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#nav-item-02" class="nav-link" id="nav-pills-02" data-toggle="pill">Curabitur ut</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#nav-item-03" class="nav-link" id="nav-pills-02" data-toggle="pill">Aliquam quis</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="nav-pills-content">
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                            <!-- Inserção de video responsivo -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ypQZV03l80g"></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <p>In hac habitasse platea dictumst. Suspendisse libero enim, pellentesque et varius in, tristique ut augue. Aliquam quis finibus quam. Curabitur mollis ex sapien, eu pretium ligula venenatis vitae. Curabitur ut augue pellentesque, cursus elit sed, commodo risus. Nulla pulvinar nisl consectetur mi vehicula, id malesuada metus dictum. Aenean faucibus egestas risus in sodales. Nam augue est, posuere ac risus id, consectetur suscipit odio. Etiam sed vehicula libero. Praesent vulputate ipsum eleifend, facilisis arcu nec, consectetur ligula. Fusce elementum, sapien ut faucibus tincidunt, dolor metus elementum urna, in vehicula velit velit ut felis.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                         <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NHMAx7AmK70"></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <p>Sed dapibus at nunc ac pharetra. Praesent luctus tellus at libero tempor placerat. Sed ultricies, lorem at consectetur venenatis, sapien diam consequat dolor, quis ultrices sapien lacus ut eros. Morbi quis commodo eros. Integer luctus enim eget erat tincidunt, ut condimentum justo interdum. Nam semper dictum facilisis. Maecenas metus leo, ullamcorper ut sagittis vitae, iaculis et diam. Etiam lacus eros, finibus eget enim et, efficitur mollis mauris. In id turpis nec lectus tincidunt cursus. Phasellus sed eros vitae urna pellentesque pharetra nec sed metus. Suspendisse vitae lacus ante. Nam pharetra sed felis sit amet hendrerit.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                         <div class="tab-pane fade " id="nav-item-03" role="tabpanel">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JJilRKIaY1Y"></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <p>Mauris in quam tincidunt, sodales nisi ut, porttitor lorem. In vitae turpis egestas, ullamcorper ligula in, vulputate neque. Integer tincidunt elit sit amet metus hendrerit, varius rutrum metus fringilla. Nullam semper ultricies dui, eget feugiat nibh cursus non. Ut sodales dui velit, id vulputate erat efficitur eget. Vivamus non tellus sit amet libero dictum rhoncus. Aenean consequat volutpat sem. Cras a lectus eu purus porta tincidunt. Integer gravida justo non nulla iaculis egestas. Nam pharetra sit amet nunc et fermentum. Nulla est orci, efficitur vel ante sit amet, efficitur imperdiet est.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>  
+                </div>
+                
+            </div>            
+        </div>
+
+    </div>
+
+    <!--Formulários -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"><i class="fa fa-paper-plane text-primary"></i> Cras cursus mauris</h1>
+            </div>            
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Seu nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div> 
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Seu sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">           
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputEnd">Seu endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Sua cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="inputEst">Seu estado</label>
+                            <select id="inputEst" class="form-control">
+                                <option selected>Escolha...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>                                
+                            </select>                            
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inputCEP">Seu CEP</label>
+                            <input type="text" id="inputCEP" class="form-control" placeholder="Seu CEP...">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Desejo receber novidades por e-mail
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="Submit" class="btn btn-primary">Enviar</button>
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Curabitur ut" data-content="In ut imperdiet lacus, ut sodales ligula.">Ajuda</a>
+                        </div>
+                        
+                    </div>
+
+                </form>
+            </div>
+
+    </div>
+    <!-- rodapé -->
+    <div class="row">
+        <div class="col-12 mb-3"><hr></div>
+        <!-- texto -->
+        <div class="col-sm-4">
+            <h3>Curso</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nunc vitae ex consectetur bibendum. Ut volutpat nisl a purus consequat, eget aliquam diam rutrum.</p><p>Cras neque massa, mollis id augue pharetra, commodo maximus magna. Phasellus id porttitor nisi. Nulla molestie blandit nulla, sit amet pulvinar ligula accumsan in.
+            </p>
+        </div>
+        <!-- Menu grupo de lista -->
+        <div class="col-sm-4">
+            <h3>Menu</h3>
+            <div class="list-group text-center">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Serviços</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contato</a>
+            </div>
+        </div>
+        <!-- Menu grupo de botões -->
+        <div class="col-sm-4">
+            <h3>Social</h3>
+            <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                <a class="btn btn-outline-primary" href="#"><i class="fa fa-facebook-official" aria-hidden="true"> Facebook</i></a>
+                <a class="btn btn-outline-info" href="#"><i class="fa fa-twitter-square" aria-hidden="true"> Twitter</i></a>
+                <a class="btn btn-outline-warning" href="#"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+            </div>
+        </div>
+        <!-- Citação -->
+        <div class="col-12 mt-5">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho.</p>
+                <footer class="blockquote-footer">Biz Stone <cite title="Título">Fundador do Twitter</cite></footer>
+            </blockquote>
+        </div>        
     </div>
 
     <!-- Modal -->
@@ -290,8 +475,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
   </body>
 </html>
